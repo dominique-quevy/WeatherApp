@@ -9,10 +9,10 @@ class WeatherSearch extends StatefulWidget {
   const WeatherSearch({Key? key}) : super(key: key);
 
   @override
-  _WeatherSearchState createState() => _WeatherSearchState();
+  WeatherSearchState createState() => WeatherSearchState();
 }
 
-class _WeatherSearchState extends State<WeatherSearch> {
+class WeatherSearchState extends State<WeatherSearch> {
   //final _location = LocationData();
   final _weather = ApiService();
   late TextEditingController searchController;
